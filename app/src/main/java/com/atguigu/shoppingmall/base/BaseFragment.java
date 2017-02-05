@@ -15,14 +15,13 @@ import android.view.ViewGroup;
  * 作用：BaseFragment
  */
 public abstract class BaseFragment extends Fragment {
-    public Context mContext;
 
+    public Context mContext;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getActivity();
-
     }
 
     @Nullable
@@ -47,8 +46,5 @@ public abstract class BaseFragment extends Fragment {
      * 初始化数据
      */
     public void initData() {
-
     }
-
-
 }

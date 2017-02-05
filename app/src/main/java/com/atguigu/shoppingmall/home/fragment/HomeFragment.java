@@ -199,8 +199,5 @@ public class HomeFragment extends BaseFragment {
             resultBean.setSeckill_info(seckillInfoBean);
 
         }
-
     }
-
-
 }
