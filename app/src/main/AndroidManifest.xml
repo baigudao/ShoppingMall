@@ -25,25 +25,29 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
+        android:name=".app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/atguigu_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".app.MyApplication"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".app.MainActivity" android:launchMode="singleTask">
+        <activity
+            android:name=".app.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask">
+            <!-- 解决横竖屏切换带来的内容重叠问题 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".app.GoodsInfoActivity" />
-        <activity android:name=".home.activity.GoodsListActivity"/>
-        <activity android:name=".shoppingcart.activity.ShoppingCartActivity"/>
-        <activity android:name=".app.LoginActivity"/>
-        <activity android:name=".user.activity.MessageCenterActivity"/>
-        <activity android:name=".app.CallCenterActivity"/>
+        <activity android:name=".home.activity.GoodsListActivity" />
+        <activity android:name=".shoppingcart.activity.ShoppingCartActivity" />
+        <activity android:name=".app.LoginActivity" />
+        <activity android:name=".user.activity.MessageCenterActivity" />
+        <activity android:name=".app.CallCenterActivity" />
     </application>
 
 </manifest>
