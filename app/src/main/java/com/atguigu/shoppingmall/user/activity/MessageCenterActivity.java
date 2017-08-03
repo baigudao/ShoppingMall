@@ -7,7 +7,6 @@ import android.widget.ImageButton;
 
 import com.atguigu.shoppingmall.R;
 
-
 public class MessageCenterActivity extends Activity {
     private ImageButton ib_login_back;
 

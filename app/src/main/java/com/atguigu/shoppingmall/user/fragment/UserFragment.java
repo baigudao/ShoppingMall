@@ -1,6 +1,5 @@
 package com.atguigu.shoppingmall.user.fragment;
 
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
@@ -19,6 +18,7 @@ import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Transformation;
 
 public class UserFragment extends BaseFragment implements View.OnClickListener {
+
     private ImageButton ibUserIconAvator;
     private TextView tvUsername;
     private TextView tvAllOrder;
@@ -107,7 +107,6 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     public void initData() {
-
         scrollView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

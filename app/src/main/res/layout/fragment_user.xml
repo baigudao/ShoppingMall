@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".user.fragment.UserFragment">
 
-
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
@@ -40,6 +39,7 @@
                     android:layout_marginTop="130dp"
                     android:text="登录/注册"
                     android:textColor="#fff" />
+
             </RelativeLayout>
 
             <View
@@ -258,7 +258,6 @@
         android:textColor="#fff"
         android:textSize="20sp" />
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -276,6 +275,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:background="@drawable/new_message_icon" />
+
     </RelativeLayout>
 
 </RelativeLayout>
